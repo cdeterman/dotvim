@@ -1,0 +1,8 @@
+Installation:
+
+	git clone git://github.com/cdeterman/dotvim.git ~/.vim
+
+Create Symbolic links:
+
+	ln -s ~/dotfiles/vimrc ~/.vimrc
+
