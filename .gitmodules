@@ -52,3 +52,6 @@
 [submodule "bundle/pyflakes-pathogen"]
 	path = bundle/pyflakes-pathogen
 	url = https://github.com/mitechie/pyflakes-pathogen.git
+[submodule "bundle/virutalenv"]
+	path = bundle/virutalenv
+	url = https://github.com/jmcantrell/vim-virtualenv.git
