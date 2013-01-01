@@ -1,0 +1,27 @@
+#work in detached state (default but verifies)
+autodetach on
+
+#disable to the welcome message
+startup_message off
+
+#sets how many lines need to be kept for copy buffer
+defscrollback 10000
+
+#shows line for hostname, the available windows, if windows are being logged or not and shows the current active window
+#alwayslastline makes line visible at bottom at all times
+#%{rw} sets text color to red and background to white
+#%H shows hostname where screen reside
+#%{wk} sets white text with black background
+#the | just puts a | line the line
+#%? tells screen to only show the following parameters if not empty
+#%-Lw shows the current window
+#%{wb} sets color to white text with blue background
+#%n prints window number
+#* shows a star
+#%f flags window when relevant
+#%t shows window title
+#(%u) shows all other users in this window between brackets
+#%+Lw provides all screen window information except current one
+#hardstatus alwayslastline "%{rw}%H%{wk}|%?%-Lw%?%{wb}%n*%f %t%?(%u)%?%{wk}%?%+Lw%?"
+
+hardstatus alwayslastline "%{= kw}[ %{= kb}%H%{= kw} ][%= %{= kw}%?%-Lw%?%{= kW}%n*%f %t%?%?%{= kw}%?%+Lw%?%?%= ][ %{r}%l%{w} ]%{w}[%{r} %d/%m/%y %C %A %{w}]%{w}"

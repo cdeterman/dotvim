@@ -5,4 +5,4 @@ Installation:
 Create Symbolic links:
 
 	ln -s ~/dotfiles/vimrc ~/.vimrc
-
+	ln -s ~/dotfiles/screenrc ~/.screenrc
