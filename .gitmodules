@@ -55,3 +55,6 @@
 [submodule "bundle/virutalenv"]
 	path = bundle/virutalenv
 	url = https://github.com/jmcantrell/vim-virtualenv.git
+[submodule "bundle/Vim-R-plugin"]
+	path = bundle/Vim-R-plugin
+	url = https://github.com/jcfaria/Vim-R-plugin.git
