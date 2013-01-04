@@ -6,3 +6,11 @@ Create Symbolic links:
 
 	ln -s ~/dotfiles/vimrc ~/.vimrc
 	ln -s ~/dotfiles/screenrc ~/.screenrc
+
+If using cygwin rxvt terminal and want to modify ls colors
+
+	ln -s /etc/defaults/etc/DIR_COLORS ~/.vim/DIR_COLORS
+	
+	add eval "`dircolors -b ~/.vim/DIR_COLORS`" to bashrc or bash_profile
+
+ 

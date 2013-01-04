@@ -1,7 +1,7 @@
 set nocompatible
 set background=dark
 if has('win32') || has('win64')
-        set runtimepath=$HOME/vim/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/vim/.vim/after
+    set runtimepath=$HOME/vim/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/vim/.vim/after
 endif
 set shiftwidth=4
 set autoindent
@@ -21,7 +21,7 @@ let mapleader=","
 
 "autocmd vimenter * if !argc() | NERDTree| endif"
 map <leader>n :NERDTreeToggle<CR>
-let NERDTreeDirArrows=1
+let NERDTreeDirArrows=0
 let NERDTreeShowHidden=1
 
 "Map Tasklist to ,td"
@@ -51,6 +51,8 @@ set completeopt=menuone,longest,preview
 "get list of bufferes with :buffers"
 "Switch befferes with b<number> or by name :b test.py (tab completion can be
 "used)"
+"delete buffer by switching window to mbe window and pressing d when over
+"buffer of choice"
 
 "command-t plugin - help find and open files"
 "needed to have ruby support and run 'make rake' in bundle/command-t folder"
